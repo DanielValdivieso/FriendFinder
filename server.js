@@ -13,6 +13,8 @@ app.use(express.static(path.join(__dirname, './app/public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.text());
+require('./app/routing/htmlRoutes')(app);
+
 
 app.listen(PORT, function(){
     console.log("Friend Finder app is listening on PORT: " + PORT);
