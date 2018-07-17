@@ -1,1 +1,3 @@
 var friendsArray = []
+
+module.exports = []
